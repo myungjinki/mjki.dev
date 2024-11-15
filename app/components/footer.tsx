@@ -16,7 +16,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col col-span-4 gap-1 mt-8">
+      <div className="flex flex-col col-span-4 gap-1 my-8">
         <span>All rights reserved</span>
         <span>© Myungjin Ki 2024</span>
       </div>

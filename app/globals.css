@@ -35,3 +35,16 @@ h2 {
     text-wrap: balance;
   }
 }
+
+dialog {
+  max-height: 100vh;
+  max-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+}
+
+dialog::backdrop {
+  opacity: 0;
+}
