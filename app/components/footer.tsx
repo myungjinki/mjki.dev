@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="grid grid-cols-4 gap-4 px-4">
       <div className="col-span-4 name">Myungjin Ki</div>
-      <div className="col-span-4 flex gap-4">
+      <div className="flex col-span-4 gap-4">
         <Link href={SNS.GITHUB} target="_blank">
           <Image src="/svg/github.svg" width={25} height={25} alt="github" />
         </Link>
