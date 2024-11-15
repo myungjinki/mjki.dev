@@ -4,7 +4,7 @@ import HomeMain from "./components/home-main";
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-dvh">
       <Header />
       <HomeMain />
       <div className="h-40"></div>
