@@ -1,3 +1,15 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Header() {
-  return <div>Header</div>;
+  return (
+    <nav className="flex items-center justify-between px-[5vw] py-10">
+      <Link href="/" className="name">
+        Myungjin Ki
+      </Link>
+      <button className="flex items-center justify-center border-2 rounded-full h-14 w-14">
+        <Image src="/svg/menu.svg" alt="menu" width={24} height={24} />
+      </button>
+    </nav>
+  );
 }
