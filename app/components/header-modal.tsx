@@ -9,6 +9,7 @@ interface HeaderModalProps {
   className?: string;
 }
 
+// TODO: Block scrolling when the modal is open
 function HeaderModal({ isOpen, onClose, className = "" }: HeaderModalProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
