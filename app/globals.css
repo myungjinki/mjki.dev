@@ -20,6 +20,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@layer components {
+  .name {
+    @apply text-2xl font-bold;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

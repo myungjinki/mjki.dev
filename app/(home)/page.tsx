@@ -7,6 +7,7 @@ export default function Home() {
     <div>
       <Header />
       <HomeMain />
+      <div className="h-40"></div>
       <Footer />
     </div>
   );
