@@ -4,7 +4,7 @@ import { SNS } from "../utils/constants";
 
 export default function Footer() {
   return (
-    <div className="grid grid-cols-4 gap-4 px-4">
+    <div className="grid grid-cols-4 gap-4 px-8">
       <div className="col-span-4 name">Myungjin Ki</div>
       <div className="flex col-span-4 gap-4">
         <Link href={SNS.GITHUB} target="_blank">

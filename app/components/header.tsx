@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <nav className="flex items-center justify-between px-[5vw] py-10">
+    <nav className="flex items-center justify-between px-8 py-10">
       <Link href="/" className="name">
         Myungjin Ki
       </Link>
