@@ -1,21 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import Modal from "./header-modal";
 import { useState } from "react";
 import { ThemeToggleButton } from "./theme-toggle-button";
+import { AnimationLink } from "./animation-link";
 
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <header className="">
       <nav className="flex items-center justify-between px-8 py-10">
-        <Link href="/" className="name">
+        <AnimationLink href="/" className="name">
           mjki.dev
-        </Link>
+        </AnimationLink>
         <div className="items-center justify-end hidden w-1/2 gap-12 lg:flex">
-          <Link href="/career">Career</Link>
+          <AnimationLink href="/career">Career</AnimationLink>
           <ThemeToggleButton />
         </div>
         <button
