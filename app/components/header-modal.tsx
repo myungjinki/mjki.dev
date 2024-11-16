@@ -42,7 +42,7 @@ function HeaderModal({ isOpen, onClose, className = "" }: HeaderModalProps) {
       ref={dialogRef}
       className={`h-[calc(100dvh-136px)] mt-[136px] flex flex-col dark:bg-gray-900 dark:text-white ${className}`}
     >
-      <Link href="/career" className="p-8 border-t-2">
+      <Link onClick={onClose} href="/career" className="p-8 border-t-2">
         Career
       </Link>
       <div className="flex justify-center">
