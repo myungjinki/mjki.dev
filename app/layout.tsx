@@ -25,8 +25,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <script
+          key="theme-script"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var theme = localStorage.getItem('theme');
+                if (theme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-dvw min-h-dvh lg:max-w-5xl mx-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-w-dvw min-h-dvh text-black bg-white dark:text-white dark:bg-gray-900 lg:max-w-5xl mx-auto`}
       >
         {children}
       </body>

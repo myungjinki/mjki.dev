@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Modal from "./header-modal";
 import { useState } from "react";
+import { ThemeToggleButton } from "./theme-toggle-button";
 
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,12 +14,14 @@ export default function Header() {
         <Link href="/" className="name">
           mjki.dev
         </Link>
-        <div className="justify-end hidden w-1/2 gap-12 lg:flex"></div>
+        <div className="justify-end hidden w-1/2 gap-12 lg:flex">
+          <ThemeToggleButton />
+        </div>
         <button
           className="flex items-center justify-center border-2 rounded-full h-14 w-14 lg:hidden"
           onClick={() => setIsModalOpen(true)}
         >
-          <Image src="/svg/menu.svg" alt="menu" width={24} height={24} />
+          <Image className="dark:invert" src="/svg/menu.svg" alt="menu" width={24} height={24} />
         </button>
       </nav>
       <Modal
