@@ -9,9 +9,9 @@ interface AnimationLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   className?: string;
 }
 
-export function AnimationLink({ href, children }: AnimationLinkProps) {
+export function AnimationLink({ href, children, className }: AnimationLinkProps) {
   return (
-    <Link href={href} className="relative inline-block group">
+    <Link href={href} className={`relative inline-block group ${className}`}>
       {children}
       <span
         className="absolute bottom-0 left-0 h-[2px] w-0 bg-current 
