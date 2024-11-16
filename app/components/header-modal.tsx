@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import React, { useRef, useEffect } from "react";
 import { ThemeToggleButton } from "./theme-toggle-button";
 
