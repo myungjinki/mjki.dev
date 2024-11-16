@@ -13,8 +13,9 @@ export default function Header() {
         <Link href="/" className="name">
           mjki.dev
         </Link>
+        <div className="justify-end hidden w-1/2 gap-12 lg:flex"></div>
         <button
-          className="flex items-center justify-center border-2 rounded-full h-14 w-14"
+          className="flex items-center justify-center border-2 rounded-full h-14 w-14 lg:hidden"
           onClick={() => setIsModalOpen(true)}
         >
           <Image src="/svg/menu.svg" alt="menu" width={24} height={24} />
