@@ -9,10 +9,10 @@ export default function Footer() {
         <div className="name">Myungjin Ki</div>
         <div className="flex col-span-4 gap-4">
           <Link href={SNS.GITHUB} target="_blank">
-            <Image src="/svg/github.svg" width={25} height={25} alt="github" />
+            <Image className="dark:invert" src="/svg/github.svg" width={25} height={25} alt="github" />
           </Link>
           <Link href={SNS.LINKEDIN} target="_blank">
-            <Image src="/svg/linkedin.svg" width={25} height={25} alt="linkedin" />
+            <Image className="dark:invert" src="/svg/linkedin.svg" width={25} height={25} alt="linkedin" />
           </Link>
         </div>
       </div>
