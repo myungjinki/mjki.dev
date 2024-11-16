@@ -1,3 +1,4 @@
+import { AnimationLink } from "@/app/components/animation-link";
 import Image from "next/image";
 
 interface CareerItemProps {
@@ -5,20 +6,35 @@ interface CareerItemProps {
   image: string;
   content?: {
     text: string;
-    content?: { text: string }[];
+    link?: string;
+    content?: { text: string; link?: string }[];
   }[];
   date: string;
 }
 
 export default function CareerItem({ title, image, content, date }: CareerItemProps) {
-  const renderContent = (items: { text: string; content?: { text: string }[] }[]) => {
+  const renderContent = (items: { text: string; link?: string; content?: { text: string; link?: string }[] }[]) => {
     return items.map((item, index) => (
       <li key={index}>
         {item.text}
+        {item.link && (
+          <>
+            <span>&nbsp;&nbsp;</span>
+            <AnimationLink href={item.link}>(Link)</AnimationLink>
+          </>
+        )}
         {item.content && item.content.length > 0 && (
           <ul>
             {item.content.map((subItem, subIndex) => (
-              <li key={subIndex}>{subItem.text}</li>
+              <li key={subIndex}>
+                {subItem.text}
+                {subItem.link && (
+                  <>
+                    <span>&nbsp;&nbsp;</span>
+                    <AnimationLink href={subItem.link}>(Link)</AnimationLink>
+                  </>
+                )}
+              </li>
             ))}
           </ul>
         )}
