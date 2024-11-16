@@ -29,7 +29,7 @@ export default function CareerItem({ title, image, content, date }: CareerItemPr
   return (
     <div className="grid items-start grid-cols-4 gap-2">
       <Image
-        className="w-16 h-16 col-span-1 pt-4 lg:self-start lg:w-24 lg:h-24 lg:row-span-2 justify-self-center"
+        className="self-center w-16 h-16 col-span-1 p-1 lg:self-start lg:w-24 lg:h-24 lg:row-span-2 justify-self-center"
         src={image}
         alt={title}
         width={128}

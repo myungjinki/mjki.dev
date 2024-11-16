@@ -1,5 +1,15 @@
 export const career = {
   education: {
+    ftseoul: {
+      title: "42 Seoul",
+      image: "/images/42.png",
+      date: "2020 - 2029",
+      content: [
+        {
+          text: "Grade: 12",
+        },
+      ],
+    },
     university: {
       title: "Seoul National University of Science & Technology",
       image: "/images/seoultech.png",
