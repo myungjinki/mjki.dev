@@ -3,7 +3,7 @@ import Image from "next/image";
 interface CareerItemProps {
   title: string;
   image: string;
-  content: {
+  content?: {
     text: string;
     content?: { text: string }[];
   }[];
@@ -35,15 +35,17 @@ export default function CareerItem({ title, image, content, date }: CareerItemPr
         width={128}
         height={128}
       />
-      <div className="col-span-3 place-self-start lg:row-span-1">
+      <div className="col-span-3 justify-self-start place-self-center lg:row-span-1">
         <div>
           <h3>{title}</h3>
           <h6>{date}</h6>
         </div>
       </div>
-      <div className="col-span-4 lg:col-start-2 lg:col-end-5">
-        <ul>{renderContent(content)}</ul>
-      </div>
+      {content && (
+        <div className="col-span-4 lg:col-start-2 lg:col-end-5">
+          <ul>{renderContent(content)}</ul>
+        </div>
+      )}
     </div>
   );
 }
