@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect } from "react";
 import { ThemeToggleButton } from "./theme-toggle-button";
+import Link from "next/link";
 
 interface HeaderModalProps {
   isOpen: boolean;
@@ -41,6 +42,9 @@ function HeaderModal({ isOpen, onClose, className = "" }: HeaderModalProps) {
       ref={dialogRef}
       className={`h-[calc(100dvh-136px)] mt-[136px] flex flex-col dark:bg-gray-900 dark:text-white ${className}`}
     >
+      <Link href="/career" className="p-8 border-t-2">
+        Career
+      </Link>
       <div className="flex justify-center">
         <ThemeToggleButton />
       </div>
