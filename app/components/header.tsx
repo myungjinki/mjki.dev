@@ -14,7 +14,8 @@ export default function Header() {
         <Link href="/" className="name">
           mjki.dev
         </Link>
-        <div className="justify-end hidden w-1/2 gap-12 lg:flex">
+        <div className="items-center justify-end hidden w-1/2 gap-12 lg:flex">
+          <Link href="/career">Career</Link>
           <ThemeToggleButton />
         </div>
         <button

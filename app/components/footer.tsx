@@ -5,6 +5,7 @@ import { SNS } from "../utils/constants";
 export default function Footer() {
   return (
     <footer className="grid grid-cols-4 gap-4 px-8">
+      <div className="h-40"></div>
       <div className="flex flex-col col-span-4 gap-4">
         <div className="name">Myungjin Ki</div>
         <div className="flex col-span-4 gap-4">
