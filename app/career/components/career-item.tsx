@@ -22,8 +22,10 @@ export default function CareerItem({ title, image, homepage, content, date }: Ca
         {item.text}
         {item.link && (
           <>
-            <span>&nbsp;&nbsp;</span>
-            <AnimationLink href={item.link}>(Link)</AnimationLink>
+            <span>&nbsp;</span>
+            <AnimationLink className="font-bold" href={item.link}>
+              (Link)
+            </AnimationLink>
           </>
         )}
         {item.content && item.content.length > 0 && (
