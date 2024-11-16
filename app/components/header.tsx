@@ -8,8 +8,8 @@ import { useState } from "react";
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <nav className="">
-      <div className="flex items-center justify-between px-8 py-10">
+    <header className="">
+      <nav className="flex items-center justify-between px-8 py-10">
         <Link href="/" className="name">
           mjki.dev
         </Link>
@@ -19,12 +19,12 @@ export default function Header() {
         >
           <Image src="/svg/menu.svg" alt="menu" width={24} height={24} />
         </button>
-      </div>
+      </nav>
       <Modal
         className={`${isModalOpen || "hidden"}`}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       ></Modal>
-    </nav>
+    </header>
   );
 }
