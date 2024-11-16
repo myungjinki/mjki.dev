@@ -1,22 +1,24 @@
 import { AnimationLink } from "@/app/components/animation-link";
 import Image from "next/image";
 
+interface ContentItem {
+  text: string;
+  link?: string;
+  content?: ContentItem[];
+}
+
 interface CareerItemProps {
   title: string;
   image: string;
   homepage: string;
-  content?: {
-    text: string;
-    link?: string;
-    content?: { text: string; link?: string }[];
-  }[];
+  content?: ContentItem[];
   date: string;
 }
 
 export default function CareerItem({ title, image, homepage, content, date }: CareerItemProps) {
-  const renderContent = (items: { text: string; link?: string; content?: { text: string; link?: string }[] }[]) => {
+  const renderNestedContent = (items: ContentItem[]) => {
     return items.map((item, index) => (
-      <li key={index}>
+      <li key={index} className="mb-2">
         {item.text}
         {item.link && (
           <>
@@ -25,19 +27,7 @@ export default function CareerItem({ title, image, homepage, content, date }: Ca
           </>
         )}
         {item.content && item.content.length > 0 && (
-          <ul>
-            {item.content.map((subItem, subIndex) => (
-              <li key={subIndex}>
-                {subItem.text}
-                {subItem.link && (
-                  <>
-                    <span>&nbsp;&nbsp;</span>
-                    <AnimationLink href={subItem.link}>(Link)</AnimationLink>
-                  </>
-                )}
-              </li>
-            ))}
-          </ul>
+          <ul className="pl-5 mt-2 list-disc">{renderNestedContent(item.content)}</ul>
         )}
       </li>
     ));
@@ -62,7 +52,7 @@ export default function CareerItem({ title, image, homepage, content, date }: Ca
       </div>
       {content && (
         <div className="col-span-4 lg:col-start-2 lg:col-end-5">
-          <ul>{renderContent(content)}</ul>
+          <ul className="pl-5 list-disc">{renderNestedContent(content)}</ul>
         </div>
       )}
     </div>
