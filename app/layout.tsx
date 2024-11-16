@@ -16,8 +16,22 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "mjki.dev",
-  description: "mjki.dev - Personal blog by Myungjin Ki",
+  openGraph: {
+    title: "mjki.dev",
+    description: "Hello! I'm Myungjin Ki. I'm a software engineer based in Seoul, South Korea.",
+    url: "https://mjki.dev",
+    siteName: "mjki.dev",
+    type: "website",
+    locale: "ko_KR",
+    images: [
+      {
+        url: "https://mjki.dev/_next/image?url=%2Fimages%2Fprofile-1.jpg&w=640&q=75",
+        width: 400,
+        height: 400,
+        alt: "mjki.dev",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
