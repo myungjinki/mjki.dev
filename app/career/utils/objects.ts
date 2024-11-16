@@ -10,7 +10,7 @@ export const career = {
           text: "Role: Teacher",
           content: [
             {
-              text: "국제학교에서 초중등 학생에게 프로그래밍을 가르치고 있습니다.",
+              text: "국제학교에서 프로그래밍을 가르치고 있습니다.",
             },
           ],
         },
@@ -23,6 +23,7 @@ export const career = {
       title: "Aligo AI",
       image: "/images/aligoai.png",
       date: "2022.12 - 2024.03, 1yr 4mo",
+      homepage: "https://www.aligo.ai/",
       content: [
         {
           text: "Role: Backend Developer",
@@ -45,6 +46,7 @@ export const career = {
       title: "LINE Corp",
       image: "/images/linecorp.png",
       date: "2022.10 - 2022.12, 3mo",
+      homepage: "https://linepluscorp.com/ko/",
       content: [
         {
           text: "Role: Part-time Developer",
@@ -66,6 +68,7 @@ export const career = {
       title: "42 Seoul",
       image: "/images/42.png",
       date: "2020 - 2029",
+      homepage: "https://42.fr/",
       content: [
         {
           text: "Grade: 12",
@@ -76,6 +79,7 @@ export const career = {
       title: "Seoul National University of Science & Technology",
       image: "/images/seoultech.png",
       date: "2009 - 2017",
+      homepage: "https://www.seoultech.ac.kr/index.jsp",
       content: [
         {
           text: "Grade: 3.8 / 4.5",
@@ -97,6 +101,7 @@ export const career = {
       title: "Bugil Academy",
       image: "/images/bugil.png",
       date: "2006 - 2009",
+      homepage: "https://www.bugil.hs.kr/",
       content: [
         {
           text: "Physics, Chemistry class",

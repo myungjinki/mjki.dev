@@ -4,6 +4,7 @@ import Image from "next/image";
 interface CareerItemProps {
   title: string;
   image: string;
+  homepage: string;
   content?: {
     text: string;
     link?: string;
@@ -12,7 +13,7 @@ interface CareerItemProps {
   date: string;
 }
 
-export default function CareerItem({ title, image, content, date }: CareerItemProps) {
+export default function CareerItem({ title, image, homepage, content, date }: CareerItemProps) {
   const renderContent = (items: { text: string; link?: string; content?: { text: string; link?: string }[] }[]) => {
     return items.map((item, index) => (
       <li key={index}>
@@ -53,7 +54,9 @@ export default function CareerItem({ title, image, content, date }: CareerItemPr
       />
       <div className="col-span-3 justify-self-start place-self-center lg:row-span-1">
         <div>
-          <h3>{title}</h3>
+          <h3>
+            <AnimationLink href={homepage}>{title}</AnimationLink>
+          </h3>
           <h6>{date}</h6>
         </div>
       </div>
