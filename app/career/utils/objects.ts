@@ -40,16 +40,13 @@ export const career = {
           text: "Tasks",
           content: [
             {
-              text: "주 업무는 Django, DRF를 사용해 서비스에 필요한 API 개발",
+              text: "주 업무는 Django, DRF를 사용해 서비스에 필요한 API를 개발했습니다.",
             },
             {
-              text: "Scrapy를 이용한 SNS 광고 데이터 스크래핑",
+              text: "Scrapy를 이용한 Instagram및 외부 광고 데이터 스크래핑을 했습니다.",
             },
             {
-              text: "결제 모듈 연결",
-            },
-            {
-              text: "OpenCV를 이용한 광고 이미지 자동 생성",
+              text: "OpenCV를 이용한 광고 이미지 자동 생성을 수행했습니다.",
             },
           ],
         },
