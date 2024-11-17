@@ -7,12 +7,7 @@ export const career = {
       homepage: "https://ssiand.org/",
       content: [
         {
-          text: "Role: Teacher",
-          content: [
-            {
-              text: "국제학교에서 프로그래밍을 가르치고 있습니다.",
-            },
-          ],
+          text: "국제학교에서 프로그래밍을 가르치고 있습니다.",
         },
         {
           text: "Subjects: Roblox Studio, Scratch, HTML/CSS, JavaScript, Python",
@@ -26,10 +21,7 @@ export const career = {
       homepage: "https://www.aligo.ai/",
       content: [
         {
-          text: "Role: Backend Developer",
-        },
-        {
-          text: "Project: Celevu",
+          text: "Product: Celevu",
           link: "https://celevu.ai/",
           content: [
             {
@@ -45,16 +37,19 @@ export const career = {
           text: "Tech Stack: Python, Django, AWS, Docker",
         },
         {
-          text: "Role",
+          text: "Tasks",
           content: [
             {
-              text: "GraphQL API를 개발했습니다.",
+              text: "주 업무는 Django, DRF를 사용해 서비스에 필요한 API 개발",
             },
             {
-              text: "AWS Lambda를 사용해 서버리스 아키텍처를 구축했습니다.",
+              text: "Scrapy를 이용한 SNS 광고 데이터 스크래핑",
             },
             {
-              text: "Docker, Jenkins를 사용해 CI/CD 파이프라인을 구축했습니다.",
+              text: "결제 모듈 연결",
+            },
+            {
+              text: "OpenCV를 이용한 광고 이미지 자동 생성",
             },
           ],
         },
@@ -66,9 +61,6 @@ export const career = {
       date: "2022.10 - 2022.12, 3mo",
       homepage: "https://linepluscorp.com/ko/",
       content: [
-        {
-          text: "Role: Part-time Developer",
-        },
         {
           text: "Project: LINE 기술 블로그 리빌딩",
           link: "https://techblog.lycorp.co.jp/ja",
