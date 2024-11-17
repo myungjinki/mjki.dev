@@ -53,7 +53,7 @@ export const career = {
       ],
     },
     linecorp: {
-      title: "LINE Corp",
+      title: "LINE Plus",
       image: "/images/linecorp.png",
       date: "2022.10 - 2022.12, 3mo",
       homepage: "https://linepluscorp.com/ko/",
@@ -109,7 +109,7 @@ export const career = {
       ],
     },
     university: {
-      title: "Seoul National University of Science & Technology",
+      title: "서울과학기술대학교",
       image: "/images/seoultech.png",
       date: "2009 - 2017",
       homepage: "https://www.seoultech.ac.kr/index.jsp",
@@ -156,7 +156,7 @@ export const career = {
       ],
     },
     highschool: {
-      title: "Bugil Academy",
+      title: "천안북일고등학교",
       image: "/images/bugil.png",
       date: "2006 - 2009",
       homepage: "https://www.bugil.hs.kr/",
