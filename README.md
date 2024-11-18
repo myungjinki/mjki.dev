@@ -14,3 +14,4 @@ This is the source code for my personal website [mjki.dev](https://mjki.dev).
 ## Packages
 
 - [react-icons](https://react-icons.github.io/react-icons/): Icons for the website
+- [@next/third-parties](https://www.npmjs.com/package/@next/third-parties): For Google Analytics
