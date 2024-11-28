@@ -1,170 +1,106 @@
-export const career = {
-  experience: {
-    ssi: {
-      title: "Seoul Scholars International",
-      image: "/images/ssiand.png",
-      date: "2024.04 - Present",
-      homepage: "https://ssiand.org/",
-      content: [
-        {
-          text: "국제학교에서 프로그래밍을 가르치고 있습니다.",
-        },
-        {
-          text: "Subjects: Roblox Studio, Scratch, HTML/CSS, JavaScript, Python",
-        },
-      ],
-    },
-    aligoai: {
-      title: "Aligo AI",
-      image: "/images/aligoai.png",
-      date: "2022.12 - 2024.03, 1yr 4mo",
-      homepage: "https://www.aligo.ai/",
-      content: [
-        {
-          text: "Product: Celevu",
-          link: "https://celevu.ai/",
-          content: [
-            {
-              text: "Celevu는 글로벌 광고 계약 플랫폼 서비스로, SNS 광고 제작 및 계약을 자동화합니다.",
-            },
-            {
-              text: "서울대기술지주와 TIPS를 통해 투자를 받았습니다.",
-              link: "https://thevc.kr/aligoai/fundings",
-            },
-          ],
-        },
-        {
-          text: "Tech Stack: Python, Django, AWS, Docker",
-        },
-        {
-          text: "Tasks",
-          content: [
-            {
-              text: "주 업무는 Django, DRF를 사용해 서비스에 필요한 API를 개발했습니다.",
-            },
-            {
-              text: "Scrapy를 이용한 Instagram및 외부 광고 데이터 스크래핑을 했습니다.",
-            },
-            {
-              text: "OpenCV를 이용한 광고 이미지 자동 생성을 수행했습니다.",
-            },
-          ],
-        },
-      ],
-    },
-    linecorp: {
-      title: "LINE Plus",
-      image: "/images/linecorp.png",
-      date: "2022.10 - 2022.12, 3mo",
-      homepage: "https://linepluscorp.com/ko/",
-      content: [
-        {
-          text: "Project: LINE 기술 블로그 리빌딩",
-          link: "https://techblog.lycorp.co.jp/ja",
-          content: [
-            {
-              text: "LINE Corp Japan 기술블로그의 컨텐츠와 마이그레이션 검수를 담당했습니다.",
-            },
-          ],
-        },
-      ],
-    },
+export const scratch = [
+  {
+    id: 1074586416,
+    title: "01-instruments",
   },
-  education: {
-    ftseoul: {
-      title: "42 Seoul",
-      image: "/images/42.png",
-      date: "2020 - Present",
-      homepage: "https://42.fr/",
-      content: [
-        {
-          text: "Level: 12",
-        },
-        {
-          text: "Projects",
-          content: [
-            {
-              text: "Inception-of-Things: K3s, Vagrant, ArgoCD를 사용해 인프라를 구축하는 프로젝트입니다.",
-            },
-            {
-              text: "ft_transcendence: Ping-pong 게임과, 채팅 기능이 있는 웹서비스를 Next.js, React를 사용해 구현했습니다. 팀프로젝트로 4명이 함께 했으며, 백엔드를 담당했습니다.",
-            },
-            {
-              text: "inception: Docker Compose, VirtualBox, Alpine Linux를 사용해 Wordpress를 배포하는 프로젝트입니다.",
-            },
-            {
-              text: "webserv: 간단한 Nginx를 C++로 개발했으며, CGI, HTTP/1.1을 구현했습니다.",
-            },
-            {
-              text: "cub3d: DOOM 게임을 C로 구현했습니다.",
-            },
-            {
-              text: "Philosophers: 식사하는 철학자 문제를 해결하는 프로그램을 C로 구현했습니다.",
-            },
-            {
-              text: "minishell: 간단한 bash를 C로 구현했습니다.",
-            },
-          ],
-        },
-      ],
-    },
-    university: {
-      title: "서울과학기술대학교",
-      image: "/images/seoultech.png",
-      date: "2009 - 2017",
-      homepage: "https://www.seoultech.ac.kr/index.jsp",
-      content: [
-        {
-          text: "Grade: 3.78 / 4.5",
-        },
-        {
-          text: "Major: 전자공학",
-        },
-        {
-          text: "Subjects",
-          content: [
-            {
-              text: "Computer Programming: A+",
-            },
-            {
-              text: "Computer Architecture: B",
-            },
-            {
-              text: "Mobile Programming: A",
-            },
-            {
-              text: "Image processing: A+",
-              content: [
-                {
-                  text: "문자 인식 알고리즘을 사용해 한글 이미지를 텍스트로 변환하는 프로젝트를 진행했습니다.",
-                },
-              ],
-            },
-            {
-              text: "Data communication: A+",
-            },
-          ],
-        },
-        {
-          text: "Labs: 무선통신연구실, 3yr",
-          content: [
-            {
-              text: "Verilog를 사용해 BPSK 모뎀을 설계했습니다.",
-            },
-          ],
-        },
-      ],
-    },
-    highschool: {
-      title: "천안북일고등학교",
-      image: "/images/bugil.png",
-      date: "2006 - 2009",
-      homepage: "https://www.bugil.hs.kr/",
-      content: [
-        {
-          text: "Physics, Chemistry class",
-        },
-      ],
-    },
+  {
+    id: 1103166327,
+    title: "02-train",
   },
-};
+  {
+    id: 1103167748,
+    title: "03-rainbow-pen",
+  },
+  {
+    id: 1103168348,
+    title: "04-mouse-trail",
+  },
+  {
+    id: 1103168527,
+    title: "05-jumping-game",
+  },
+  {
+    id: 1103168629,
+    title: "06-drawing-boat",
+  },
+  {
+    id: 1103168758,
+    title: "07-catch-fruit",
+  },
+  {
+    id: 1103168862,
+    title: "08-running",
+  },
+  {
+    id: 1103169694,
+    title: "09-maze",
+  },
+  {
+    id: 1103169764,
+    title: "10-catch-star",
+  },
+  {
+    id: 1103169816,
+    title: "11-rainbow-spin",
+  },
+  {
+    id: 1103169868,
+    title: "12-rainbow-triangle",
+  },
+  {
+    id: 1103169967,
+    title: "13-ocean",
+  },
+  {
+    id: 1103170004,
+    title: "14-moving-scene",
+  },
+  {
+    id: 1103170036,
+    title: "15-flying-cat",
+  },
+  {
+    id: 1103170131,
+    title: "16-snake-1",
+  },
+  {
+    id: 1103170266,
+    title: "16-snake-2",
+  },
+  {
+    id: 1103170326,
+    title: "16-snake-3",
+  },
+  {
+    id: 1103170366,
+    title: "17-paddle",
+  },
+  {
+    id: 1103170416,
+    title: "18-avoid-arrow",
+  },
+  {
+    id: 1103170613,
+    title: "19-change-shape",
+  },
+  {
+    id: 1005397161,
+    title: "20-jumping-game",
+  },
+  {
+    id: 996803091,
+    title: "21-run",
+  },
+  {
+    id: 998856070,
+    title: "22-fencing",
+  },
+  {
+    id: 998160557,
+    title: "23-polarbear",
+  },
+  {
+    id: 1005386539,
+    title: "24-whack-a-mole",
+  },
+];
