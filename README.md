@@ -40,12 +40,13 @@ I wanted to have a personal website to showcase my projects and to have a place 
 - Deployment: [Vercel](https://vercel.com/)
 
 ## Packages
+
 - Font
-    - [geist](https://www.npmjs.com/package/geist)
+  - [geist](https://www.npmjs.com/package/geist)
 - Icons
-    - [react-icons](https://react-icons.github.io/react-icons/)
+  - [react-icons](https://react-icons.github.io/react-icons/)
 - Google Anylytics
-    - [@next/third-parties](https://www.npmjs.com/package/@next/third-parties)
+  - [@next/third-parties](https://www.npmjs.com/package/@next/third-parties)
 - MDX
-    - [next-mdx-remote](https://www.npmjs.com/package/next-mdx-remote)
-    - [sugar-high](https://www.npmjs.com/package/sugar-high)
+  - [next-mdx-remote](https://www.npmjs.com/package/next-mdx-remote)
+  - [sugar-high](https://www.npmjs.com/package/sugar-high)

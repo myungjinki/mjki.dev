@@ -1,7 +1,14 @@
-export default function ScratchDetailPage({ params: { id } }: { params: { id: string } }) {
+export default function ScratchDetailPage({
+  params: { id },
+}: {
+  params: { id: string }
+}) {
   return (
     <div className="flex flex-col gap-8">
-      <a className="text-4xl font-bold" href={`https://scratch.mit.edu/projects/${id}/editor/`}>
+      <a
+        className="text-4xl font-bold"
+        href={`https://scratch.mit.edu/projects/${id}/editor/`}
+      >
         Link
       </a>
       <iframe
@@ -12,5 +19,5 @@ export default function ScratchDetailPage({ params: { id } }: { params: { id: st
         allowFullScreen
       ></iframe>
     </div>
-  );
+  )
 }

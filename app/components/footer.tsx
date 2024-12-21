@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
-import { SNS } from "../utils/constants";
+import { SNS } from "../utils/constants"
 
 export default function Footer() {
   return (
@@ -11,10 +11,22 @@ export default function Footer() {
         <div className="name">Myungjin Ki</div>
         <div className="col-span-4 flex gap-4">
           <Link href={SNS.GITHUB} target="_blank">
-            <Image className="dark:invert" src="/svg/github.svg" width={25} height={25} alt="github" />
+            <Image
+              className="dark:invert"
+              src="/svg/github.svg"
+              width={25}
+              height={25}
+              alt="github"
+            />
           </Link>
           <Link href={SNS.LINKEDIN} target="_blank">
-            <Image className="dark:invert" src="/svg/linkedin.svg" width={25} height={25} alt="linkedin" />
+            <Image
+              className="dark:invert"
+              src="/svg/linkedin.svg"
+              width={25}
+              height={25}
+              alt="linkedin"
+            />
           </Link>
         </div>
       </div>
@@ -23,5 +35,5 @@ export default function Footer() {
         <span>© Myungjin Ki 2024</span>
       </div>
     </footer>
-  );
+  )
 }

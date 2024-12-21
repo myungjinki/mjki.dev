@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from "next/link"
 
-import { scratch } from "../utils/objects";
+import { scratch } from "../utils/objects"
 
 export default function ScratchPage() {
   return (
@@ -11,5 +11,5 @@ export default function ScratchPage() {
         </Link>
       ))}
     </div>
-  );
+  )
 }

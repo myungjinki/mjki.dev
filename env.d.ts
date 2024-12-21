@@ -1,5 +1,5 @@
 namespace NodeJS {
   interface ProcessEnv {
-    GA_ID: string;
+    GA_ID: string
   }
 }

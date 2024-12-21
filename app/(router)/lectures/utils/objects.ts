@@ -103,4 +103,4 @@ export const scratch = [
     id: 1005386539,
     title: "24-whack-a-mole",
   },
-];
+]

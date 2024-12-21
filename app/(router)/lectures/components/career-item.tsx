@@ -1,22 +1,28 @@
-import Image from "next/image";
+import Image from "next/image"
 
-import { AnimationLink } from "@/app/components/animation-link";
+import { AnimationLink } from "@/app/components/animation-link"
 
 interface ContentItem {
-  text: string;
-  link?: string;
-  content?: ContentItem[];
+  text: string
+  link?: string
+  content?: ContentItem[]
 }
 
 interface CareerItemProps {
-  title: string;
-  image: string;
-  homepage: string;
-  content?: ContentItem[];
-  date: string;
+  title: string
+  image: string
+  homepage: string
+  content?: ContentItem[]
+  date: string
 }
 
-export default function CareerItem({ title, image, homepage, content, date }: CareerItemProps) {
+export default function CareerItem({
+  title,
+  image,
+  homepage,
+  content,
+  date,
+}: CareerItemProps) {
   const renderNestedContent = (items: ContentItem[]) => {
     return items.map((item, index) => (
       <li key={index} className="mb-2">
@@ -30,11 +36,13 @@ export default function CareerItem({ title, image, homepage, content, date }: Ca
           </>
         )}
         {item.content && item.content.length > 0 && (
-          <ul className="mt-2 list-disc pl-5">{renderNestedContent(item.content)}</ul>
+          <ul className="mt-2 list-disc pl-5">
+            {renderNestedContent(item.content)}
+          </ul>
         )}
       </li>
-    ));
-  };
+    ))
+  }
 
   return (
     <div className="grid grid-cols-4 items-start gap-2">
@@ -59,5 +67,5 @@ export default function CareerItem({ title, image, homepage, content, date }: Ca
         </div>
       )}
     </div>
-  );
+  )
 }

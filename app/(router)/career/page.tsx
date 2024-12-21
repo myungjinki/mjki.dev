@@ -1,6 +1,6 @@
-import CareerItem from "./components/career-item";
-import CareerItemList from "./components/career-item-list";
-import { career } from "./utils/objects";
+import CareerItem from "./components/career-item"
+import CareerItemList from "./components/career-item-list"
+import { career } from "./utils/objects"
 
 export default function CareerPage() {
   return (
@@ -16,5 +16,5 @@ export default function CareerPage() {
         <CareerItem {...career.education.highschool} />
       </CareerItemList>
     </div>
-  );
+  )
 }

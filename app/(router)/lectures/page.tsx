@@ -1,5 +1,5 @@
-import CareerItem from "./components/career-item";
-import CareerItemList from "./components/career-item-list";
+import CareerItem from "./components/career-item"
+import CareerItemList from "./components/career-item-list"
 
 export default function LecturesPage() {
   return (
@@ -18,5 +18,5 @@ export default function LecturesPage() {
         />
       </CareerItemList>
     </div>
-  );
+  )
 }

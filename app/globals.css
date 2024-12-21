@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #fff;
   --foreground: #171717;
 }
 
@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-  @apply lg:text-2xl font-medium;
+  @apply font-medium lg:text-2xl;
 }
 
 h6 {
@@ -49,8 +49,8 @@ dialog {
   max-width: 100vw;
   height: 100vh;
   width: 100vw;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 dialog::backdrop {
@@ -59,7 +59,7 @@ dialog::backdrop {
 
 ul,
 ol {
-  @apply list-disc pl-5 my-2;
+  @apply my-2 list-disc pl-5;
 }
 
 ol {
@@ -78,7 +78,7 @@ li {
 }
 
 .prose .anchor {
-  @apply absolute invisible no-underline;
+  @apply invisible absolute no-underline;
 
   margin-left: -1em;
   padding-right: 0.5em;
@@ -92,12 +92,13 @@ li {
 }
 
 .prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+  @apply underline decoration-neutral-400 decoration-[0.1em] underline-offset-2 transition-all dark:decoration-neutral-600;
 }
 
-.prose .anchor:after {
+.prose .anchor::after {
   @apply text-neutral-300 dark:text-neutral-700;
-  content: '#';
+
+  content: "#";
 }
 
 .prose *:hover > .anchor {
@@ -105,15 +106,16 @@ li {
 }
 
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+  @apply overflow-x-auto rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-2 text-sm dark:border-neutral-900 dark:bg-neutral-900;
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-lg;
+  @apply rounded-lg px-1 py-0.5;
 }
 
 .prose pre code {
   @apply p-0;
+
   border: initial;
   line-height: 1.5;
 }
@@ -132,19 +134,19 @@ li {
 }
 
 .prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
+  @apply mb-2 mt-6 text-4xl font-medium tracking-tight;
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply mb-2 mt-6 text-xl font-medium tracking-tight;
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply mb-2 mt-6 text-xl font-medium tracking-tight;
 }
 
 .prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
+  @apply mb-2 mt-6 text-lg font-medium tracking-tight;
 }
 
 .prose strong {
@@ -175,10 +177,8 @@ pre {
 }
 
 /* Remove Safari input shadow on mobile */
-input[type='text'],
-input[type='email'] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+input[type="text"],
+input[type="email"] {
   appearance: none;
 }
 
