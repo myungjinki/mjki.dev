@@ -11,11 +11,11 @@ interface AnimationLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export function AnimationLink({ href, children, className }: AnimationLinkProps) {
   return (
-    <Link href={href} className={`relative inline-block group ${className}`}>
+    <Link href={href} className={`group relative inline-block ${className}`}>
       {children}
       <span
         className="absolute bottom-0 left-0 h-[2px] w-0 bg-current 
-          group-hover:w-full transition-all duration-300 ease-in-out"
+          transition-all duration-300 ease-in-out group-hover:w-full"
       ></span>
     </Link>
   );

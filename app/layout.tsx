@@ -1,11 +1,13 @@
 import "./globals.css";
-import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { GeistMono } from "geist/font/mono";
+import { GeistSans } from "geist/font/sans";
+import type { Metadata } from "next";
+
 import Footer from "./components/footer";
 import Header from "./components/header";
 import { GOOGLE } from "./utils/constants";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+
 
 export const metadata: Metadata = {
 	openGraph: {

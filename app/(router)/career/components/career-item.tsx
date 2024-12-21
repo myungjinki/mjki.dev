@@ -1,5 +1,6 @@
-import { AnimationLink } from "@/app/components/animation-link";
 import Image from "next/image";
+
+import { AnimationLink } from "@/app/components/animation-link";
 
 interface ContentItem {
   text: string;
@@ -29,22 +30,22 @@ export default function CareerItem({ title, image, homepage, content, date }: Ca
           </>
         )}
         {item.content && item.content.length > 0 && (
-          <ul className="pl-5 mt-2 list-disc">{renderNestedContent(item.content)}</ul>
+          <ul className="mt-2 list-disc pl-5">{renderNestedContent(item.content)}</ul>
         )}
       </li>
     ));
   };
 
   return (
-    <div className="grid items-start grid-cols-4 gap-2">
+    <div className="grid grid-cols-4 items-start gap-2">
       <Image
-        className="self-center w-16 h-16 col-span-1 p-1 lg:self-start lg:w-24 lg:h-24 lg:row-span-2 justify-self-center"
+        className="col-span-1 size-16 self-center justify-self-center p-1 lg:row-span-2 lg:size-24 lg:self-start"
         src={image}
         alt={title}
         width={128}
         height={128}
       />
-      <div className="col-span-3 justify-self-start place-self-center lg:row-span-1">
+      <div className="col-span-3 place-self-center justify-self-start lg:row-span-1">
         <div>
           <h3>
             <AnimationLink href={homepage}>{title}</AnimationLink>
@@ -54,7 +55,7 @@ export default function CareerItem({ title, image, homepage, content, date }: Ca
       </div>
       {content && (
         <div className="col-span-4 lg:col-start-2 lg:col-end-5">
-          <ul className="pl-5 list-disc">{renderNestedContent(content)}</ul>
+          <ul className="list-disc pl-5">{renderNestedContent(content)}</ul>
         </div>
       )}
     </div>

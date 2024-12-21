@@ -1,7 +1,9 @@
-import { formatDate, getBlogPosts } from "@/app/utils/mdx";
-import { baseUrl } from "../../../sitemap";
 import { notFound } from "next/navigation";
+
+import { baseUrl } from "../../../sitemap";
+
 import { CustomMDX } from "@/app/components/mdx";
+import { formatDate, getBlogPosts } from "@/app/utils/mdx";
 
 export async function generateStaticParams() {
 	const posts = getBlogPosts();
@@ -75,8 +77,8 @@ export default function Blog({ params }: { params: { slug: string } }) {
 					}),
 				}}
 			/>
-			<h1 className="title font-semibold text-2xl tracking-tighter">{post.metadata.title}</h1>
-			<div className="flex justify-between items-center mt-2 mb-8 text-sm">
+			<h1 className="title text-2xl font-semibold tracking-tighter">{post.metadata.title}</h1>
+			<div className="mb-8 mt-2 flex items-center justify-between text-sm">
 				<p className="text-sm text-neutral-600 dark:text-neutral-400">{formatDate(post.metadata.publishedAt)}</p>
 			</div>
 			<article className="prose">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import { scratch } from "../utils/objects";
 
 export default function ScratchPage() {

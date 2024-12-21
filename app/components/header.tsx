@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Modal from "./header-modal";
 import { useState } from "react";
-import { ThemeToggleButton } from "./theme-toggle-button";
+
 import { AnimationLink } from "./animation-link";
+import Modal from "./header-modal";
+import { ThemeToggleButton } from "./theme-toggle-button";
 
 export default function Header() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,13 +15,13 @@ export default function Header() {
 				<AnimationLink href="/" className="name">
 					mjki.dev
 				</AnimationLink>
-				<div className="items-center justify-end hidden w-1/2 gap-12 lg:flex">
+				<div className="hidden w-1/2 items-center justify-end gap-12 lg:flex">
 					<AnimationLink href="/blog">Blog</AnimationLink>
 					<AnimationLink href="/career">Career</AnimationLink>
 					<ThemeToggleButton />
 				</div>
 				<button
-					className="flex items-center justify-center border-2 rounded-full h-14 w-14 lg:hidden"
+					className="flex size-14 items-center justify-center rounded-full border-2 lg:hidden"
 					onClick={() => setIsModalOpen(true)}
 				>
 					<Image className="dark:invert" src="/svg/menu.svg" alt="menu" width={24} height={24} />

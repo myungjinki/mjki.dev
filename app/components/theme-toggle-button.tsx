@@ -22,7 +22,7 @@ export function ThemeToggleButton() {
   };
 
   return (
-    <button onClick={toggleTheme} className="p-2 bg-gray-200 rounded-full dark:bg-gray-700">
+    <button onClick={toggleTheme} className="rounded-full bg-gray-200 p-2 dark:bg-gray-700">
       {theme === "dark" ? <FiSun className="text-yellow-500" /> : <FiMoon className="text-blue-500" />}
     </button>
   );
