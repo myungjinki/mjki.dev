@@ -13,6 +13,9 @@ This is the source code for my personal website [mjki.dev](https://mjki.dev).
 - [Functional Specification](#functional-specification)
 - [Prototype](#prototype)
 - [System Architecture](#system-architecture)
+- [Folder structure](#folder-structure)
+- [Tech Stack](#tech-stack)
+- [Packages](#packages)
 
 ## Why did I build this?
 
@@ -30,22 +33,41 @@ I wanted to have a personal website to showcase my projects and to have a place 
 
 ## System Architecture
 
-## Folder structure
-
 ## Tech Stack
 
 - Core: [Next.js](https://nextjs.org/)
-- Package Manager: [pnpm](https://pnpm.io/)
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
+- Package Manager: [pnpm](https://pnpm.io/)
+- Linting
+  - [ESLint](https://eslint.org/)
+  - [stylelint](https://stylelint.io/)
+  - [Prettier](https://prettier.io/)
+- Test
+  - [Jest](https://jestjs.io/)
+  - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+  - [Storybook](https://storybook.js.org/)
+- CI/CD: [GitHub Actioons](https://docs.github.com/en/actions)
 - Deployment: [Vercel](https://vercel.com/)
 
+<details>
+<summary>Why do I choose Tailwind CSS</summary>
+I wanted to experiment with Tailwind CSS
+</details>
+
 ## Packages
+
 - Font
-    - [geist](https://www.npmjs.com/package/geist)
+  - [geist](https://www.npmjs.com/package/geist)
 - Icons
-    - [react-icons](https://react-icons.github.io/react-icons/)
+  - [react-icons](https://react-icons.github.io/react-icons/)
 - Google Anylytics
-    - [@next/third-parties](https://www.npmjs.com/package/@next/third-parties)
+  - [@next/third-parties](https://www.npmjs.com/package/@next/third-parties)
 - MDX
-    - [next-mdx-remote](https://www.npmjs.com/package/next-mdx-remote)
-    - [sugar-high](https://www.npmjs.com/package/sugar-high)
+  - [next-mdx-remote](https://www.npmjs.com/package/next-mdx-remote)
+  - [sugar-high](https://www.npmjs.com/package/sugar-high)
+
+## Testing
+
+## Monitoring & Logging
+
+## CI/CD
