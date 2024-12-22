@@ -1,19 +1,21 @@
-import "./globals.css"
+import "../styles/globals.css"
+
 import { GoogleAnalytics } from "@next/third-parties/google"
 import { GeistMono } from "geist/font/mono"
 import { GeistSans } from "geist/font/sans"
 import type { Metadata } from "next"
 
-import Footer from "./components/footer"
-import Header from "./components/header"
-import { GOOGLE } from "./utils/constants"
+import Footer from "@/components/layout/Footer"
+import Header from "@/components/layout/Header"
+import { BASE_URL } from "@/constants"
+import { GOOGLE } from "@/constants/ga"
 
 export const metadata: Metadata = {
   openGraph: {
     title: "mjki.dev",
     description:
       "Hello! I'm Myungjin Ki. I'm a software engineer based in Seoul, South Korea.",
-    url: "https://mjki.dev",
+    url: BASE_URL,
     siteName: "mjki.dev",
     type: "website",
     locale: "ko_KR",
